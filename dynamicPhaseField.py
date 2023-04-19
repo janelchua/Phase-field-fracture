@@ -32,9 +32,10 @@ lmbda = Constant(E*nu / ((1.0 + nu)*(1.0 - 2.0*nu))) # N/mm^2
 # Mass density
 rho = Constant(1.23*10**(-9)) # (N.s^2)/mm^4
 
-# Rayleigh damping coefficients
+# Viscous stress parameter
 eta_m = Constant(0)
-eta_k = Constant(1e-8) 
+eta_k = Constant(1e-8)
+
 eta_e = Constant(1e-6)
 
 # Generalized-alpha method parameters
