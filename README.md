@@ -1,2 +1,2 @@
 # Phase-field-fracture
-# Open source dynamic fracture code for Mode II fracture in brittle material.
+# Open source dynamic fracture code for supersonic Mode II fracture in brittle material.
