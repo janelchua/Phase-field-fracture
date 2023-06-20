@@ -129,16 +129,16 @@ def sigma(u):
     return 2.0*mu*epsilon(u)+lmbda*tr(epsilon(u))*Identity(len(u))
 def psi(u):
     return 0.5*lmbda*(tr(epsilon(u)))**2 + mu*inner(epsilon(u),epsilon(u)) # isotropic linear elasticity
-def psi_pos(u):
-    return 0.5*(lmbda+mu)*(0.5*(tr(epsilon(u))+abs(tr(epsilon(u)))))**2 + mu*inner(dev(epsilon(u)),dev(epsilon(u)))
-def psi_neg(u):
-    return 0.5*(lmbda+mu)*(0.5*(tr(epsilon(u))-abs(tr(epsilon(u)))))**2
-def dev_psi_pos(u):
-    return (lmbda+mu)*(0.5*(tr(epsilon(u))+abs(tr(epsilon(u)))))*Identity(len(u))+2*mu*dev(epsilon(u))
-def dev_psi_neg(u):
-    return (lmbda+mu)*(0.5*(tr(epsilon(u))-abs(tr(epsilon(u)))))*Identity(len(u))
-def sigma2(pold,u):
-    return ((1.0-pold)**2)*(dev_psi_pos(u)) + (dev_psi_neg(u))  
+# def psi_pos(u):
+#     return 0.5*(lmbda+mu)*(0.5*(tr(epsilon(u))+abs(tr(epsilon(u)))))**2 + mu*inner(dev(epsilon(u)),dev(epsilon(u)))
+# def psi_neg(u):
+#     return 0.5*(lmbda+mu)*(0.5*(tr(epsilon(u))-abs(tr(epsilon(u)))))**2
+# def dev_psi_pos(u):
+#     return (lmbda+mu)*(0.5*(tr(epsilon(u))+abs(tr(epsilon(u)))))*Identity(len(u))+2*mu*dev(epsilon(u))
+# def dev_psi_neg(u):
+#     return (lmbda+mu)*(0.5*(tr(epsilon(u))-abs(tr(epsilon(u)))))*Identity(len(u))
+# def sigma2(pold,u):
+#     return ((1.0-pold)**2)*(dev_psi_pos(u)) + (dev_psi_neg(u))  
 
 # Mass form
 def m(unew, v_):
