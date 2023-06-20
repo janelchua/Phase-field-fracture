@@ -122,7 +122,7 @@ AutoSubDomain(top).mark(boundary_subdomains, 1)
 dss = ds(subdomain_data=boundary_subdomains)
 
 #############################################################################
-# Constituive functions
+# Constitutive functions
 def epsilon(u):
     return sym(grad(u))
 def sigma(u):
