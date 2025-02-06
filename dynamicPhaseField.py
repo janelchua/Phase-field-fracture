@@ -228,7 +228,7 @@ L_phi = rhs(E_phi)
 #############################################################################
 # Initialization of the iterative procedure and output requests
 time = np.linspace(0, T, Nsteps+1)
-u_r = 20000 # mm
+u_r = 5000 # mm
 tol = 1e-3
 
 store_phi = File ("mydata/phi.pvd")
